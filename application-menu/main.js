@@ -38,15 +38,40 @@ app.on("ready",function(){
 
     const menuTmplate = [
         {
+            label:'Edit',
+            submenu:[
+                {role:'undo'},
+                {role:'redo'},
+                {type:'separator'},
+                {role:'cut'},
+                {role:'copy'},
+                {role:'paste'},
+                {role:'pasteandmatchstyle'},
+                {role:'delete'},
+                {role:'selectall'}
+            ]
+        },
+        {
             label:"demo",
             submenu:[
                 {
-                    label:"submenu1"
+                    label:"submenu1",
+                    click:function(){
+                        console.log("submenu1 click");
+                    }
+                },
+                {
+                    type:'separator'
                 },
                 {
                     label:"submenu2"
                 }
             ]
+        },{
+            label:'help',
+            click:function () {
+                electron.shell.openExternal("https://electronjs.org/");
+            }
         }
     ];
 

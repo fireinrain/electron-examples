@@ -16,12 +16,12 @@ function addInfo(infos){
 
 
 ipc.on("opened-error-dialog",function(event,args){
-    
+
     addInfo(args);
     console.log(args);
 });
 
-//async ipc
+//async 5-ipc
 const asyncBtn = document.getElementById("asyncBtn");
 asyncBtn.addEventListener("click",function(){
     console.log("async msg 1");
@@ -33,7 +33,7 @@ ipc.on("async-reply",function(event,args){
     console.log(args);
 })
 
-//sync ipc
+//sync 5-ipc
 const syncBtn = document.getElementById("syncBtn");
 syncBtn.addEventListener("click",function(){
     console.log("sync msg 1");

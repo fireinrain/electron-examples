@@ -1,1 +1,1 @@
-console.log("render from index3.js")
+console.log("render from index3.js");

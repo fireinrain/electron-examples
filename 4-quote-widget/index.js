@@ -1,4 +1,4 @@
-let request = require("request")
+let request = require("request");
 
 let  quoteApi = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=";
 

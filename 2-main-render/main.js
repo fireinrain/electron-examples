@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -11,7 +11,7 @@ const url = require("url");
 
 
 let win;
-let win2
+let win2;
 
 function createWindow() {
     win = new BrowserWindow();

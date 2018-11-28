@@ -1,6 +1,6 @@
 // confirm("你是小倩吗？")
 
-console.log("render from index.js")
+console.log("render from index.js");
 
 const path = require("path");
 const url = require("url");
@@ -22,7 +22,7 @@ function createNewWindow() {
         slashes:true
     }));
 
-   
+
     win3.webContents.openDevTools();
 
     win3.on("close",()=>{

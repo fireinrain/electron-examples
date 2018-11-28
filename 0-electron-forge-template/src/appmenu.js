@@ -84,4 +84,4 @@ let appMenuTemplate = [
 
 module.exports = function () {
     return appMenuTemplate;
-}
+};

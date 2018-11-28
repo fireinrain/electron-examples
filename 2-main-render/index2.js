@@ -1,1 +1,1 @@
-console.log("render from index2.js")
+console.log("render from index2.js");

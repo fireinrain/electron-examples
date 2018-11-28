@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -132,7 +132,7 @@ app.on("ready", function () {
 //退出时把全局快捷键给删除
 app.on("will-qiut", function () {
     globalshortcut.unregisterAll()
-})
+});
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
         app.quit()

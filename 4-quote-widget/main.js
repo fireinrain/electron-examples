@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -18,7 +18,7 @@ let win;
 // let parentWindow,childWindow;
 
 function createWindow() {
-    
+
     win = new BrowserWindow({
         show:false,
         height:150,width:500,
@@ -32,7 +32,7 @@ function createWindow() {
 
     win.once("ready-to-show",()=>{
         win.show();
-    })
+    });
 
     //开启devtools
 

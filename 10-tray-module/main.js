@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -9,8 +9,8 @@ const BrowserWindow = electron.BrowserWindow;
 const path = require("path");
 const url = require("url");
 //常驻栏图标
-const Tray = electron.Tray
-const iconPath = path.join(__dirname,'electron.png')
+const Tray = electron.Tray;
+const iconPath = path.join(__dirname,'electron.png');
 const Menu  = electron.Menu;
 
 
@@ -66,7 +66,7 @@ function createWindow() {
                 }
             ]
         }
-    ]
+    ];
 
     const contextMenu = Menu.buildFromTemplate(template);
     //给图标设置菜单

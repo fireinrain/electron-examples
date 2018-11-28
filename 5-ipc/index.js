@@ -31,7 +31,7 @@ asyncBtn.addEventListener("click",function(){
 ipc.on("async-reply",function(event,args){
     console.log("handle the reply from main process");
     console.log(args);
-})
+});
 
 //sync 5-ipc
 const syncBtn = document.getElementById("syncBtn");
@@ -44,7 +44,7 @@ syncBtn.addEventListener("click",function(){
 
 
 //remote 用的就是同步的ipc
-let BrowserWindow = require("electron").remote.BrowserWindow
+let BrowserWindow = require("electron").remote.BrowserWindow;
 
 let renderWin = new BrowserWindow({
     title:"Java is good!"

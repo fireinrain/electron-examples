@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -54,10 +54,10 @@ function createWindow() {
 
 
 
-   
-    
 
-   
+
+
+
 }
 
 app.on("ready",createWindow);

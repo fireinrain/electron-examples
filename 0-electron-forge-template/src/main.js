@@ -2,7 +2,7 @@ const {app, BrowserWindow} = require('electron');
 
 const {Menu, MenuItem, dialog, ipcMain} = require('electron');
 
-const appMenuTemplate = require('./appmenu')
+const appMenuTemplate = require('./appmenu');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -37,7 +37,7 @@ const createWindow = () => {
 };
 
 
-const menu = Menu.buildFromTemplate(appMenuTemplate)
+const menu = Menu.buildFromTemplate(appMenuTemplate);
 
 //增加主菜单
 menu.items[0].submenu.append(new MenuItem({ //menu.items获取是的主菜单一级菜单的菜单数组，menu.items[0]在这里就是第1个File菜单对象，在其子菜单submenu中添加新的子菜单

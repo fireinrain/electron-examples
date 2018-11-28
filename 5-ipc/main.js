@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 
 console.log("main process working");
@@ -26,7 +26,7 @@ function createWindow() {
 
     win.once("ready-to-show",function(){
         win.show();
-    })
+    });
 
     //开启devtools
 
@@ -48,13 +48,13 @@ ipc.on("open-error-dialog",function(){
 ipc.on("async message",function(event,args){
     console.log("asyncBtn send info: "+args);
     event.sender.send("async-reply","async message reply");
-})
+});
 
 //5-ipc sync
 ipc.on("sync message",function(event,data){
     event.returnValue = "sync-reply";
     console.log("syncBtn send Info: "+data);
-})
+});
 
 app.on("ready",createWindow);
 app.on("window-all-closed",()=>{
